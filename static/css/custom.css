@@ -1,0 +1,25 @@
+.exp {
+  border: 1px solid pink;
+  color: #E94560;
+  background-color: #E8D8E0;
+  padding-top: 1px;
+  padding-left: 2px;
+  padding-right: 2px;
+  padding-bottom: 1px;
+  border-radius: 2.5px;
+  text-decoration: None;
+  font-weight: bolder;
+  }
+
+.pre {
+  border: 1px solid #00B894;
+  color: #16A085;
+  background-color: #A9DFBF;
+  padding-top: 1px;
+  padding-left: 2px;
+  padding-right: 2px;
+  padding-bottom: 1px;
+  border-radius: 2.5px;
+  text-decoration: None;
+  font-weight: bolder;
+  }

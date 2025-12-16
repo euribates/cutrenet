@@ -8,6 +8,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="static/css/custom.css">
 
     <title>Cutrenet</title>
   </head>
@@ -50,6 +51,15 @@
             Sírvete
           </a>
         </li>  
+
+        <li class="list-group-item">
+          <i class="bi bi-box"></i>
+          <a href="https://incidencias.gobiernodecanarias.org/external/itsmconfigitem/overview">
+            Activos
+          </a>
+        </li>  
+
+
       </ul>
 
     </div><div class="col-4">
@@ -75,32 +85,39 @@
       <h4>Servidores de SAS 3.5</h4>
       <ul>
 
-        <li><a href="https://cmm.gobiernodecanarias.net/">
-            <code>https://cmm.gobiernodecanarias.net/</code>
-          </a> (exp)</li>
+        <li>
+          <a href="https://cmm.gobiernodecanarias.net/">
+            <code>cmm.gobiernodecanarias.net</code></a>
+          
+          <a href="https://cmm.gobiernodecanarias.net/">
+          <code class="exp">EXP</code></a>
+        </li>
 
-        <li><a href="https://cmm-pre.gobiernodecanarias.net/">
-            <code>https://cmm-pre.gobiernodecanarias.net/</code>
-          </a> (pre)</li>
+        <li>
+          <a href="https://cmm-pre.gobiernodecanarias.net/">
+            <code>cmm-pre.gobiernodecanarias.net</code></a>
+          <a href="https://cmm-pre.gobiernodecanarias.net/">
+          <code class="pre">PRE</code></a>
       </ul>    
-      
       
       <h4>Servidores de SAS Viya (SAS 4)</h4>
       <ul>
 
-        <li><a href="https://piad-pre.gobiernodecanarias.net/SASLanding/">
-            SAS Viya 4 en entorno de Pre-Producción
-          </a></li>
+        <li>
+          <a href="https://piad-pre.gobiernodecanarias.net/SASLanding/">
+            piad-pre.gobiernodecanarias.net/SASLanding</a>
+          <a href="https://piad-pre.gobiernodecanarias.net/SASLanding/">
+          <code class="pre">PRE</code></a>
+        </li>
 
       </ul>    
       
       <p>Notas: Todos los datos deberían leerse del <i>Data-lake</i>, pero
-      en la práctica a veces va directo a la fuente. La idea
-      es arreglarlo en la versión 4. Lo más sencillo sería
-      hacer ETL de tipo identidad, que cojan los datos en origen
-      y creen las réplicas en el <i>data lake</i>.</p>
+      en la práctica a veces va directo a la fuente. A
+      arreglar en la versión 4. Hacer ETL de tipo identidad, que cojan los 
+      datos en origen y creen réplicas en el <i>data lake</i>.</p>
 
-    </div><div class="col-4">
+    </div><div class="col-3">
       <h3>Buscadores</h3>
       <ul class="list-group">
 
@@ -111,26 +128,65 @@
           </a>
         </li>
 
-      </ul>    
+      </ul>
 	
-	</div><div class="col-4">
-      <h3>Redmine</h3>
-      <ul class="list-group">
+	</div><div class="col-5">
+      <h3>Tareas</h3>
 
-        <li class="list-group-item">
-          <i class="bi bi-kanban"></i>
-          <a href="https://www.gobiernodecanarias.org/aplicaciones/pms/">
-          Redmine
-          </a>
-        </li>
+      <table class="table">
+        <tr>
+          <th>Acción</th>
+          <th>Ámbito</th>
+          <th align="center">VPN</th>
+        </tr>  
+        <tr>
 
-      </ul>    
+          <td>
+            <i class="bi bi-kanban"></i>
+            Redmine
+          </td>
 
-    </div>  
+          <td>
+
+            <a href="https://www.gobiernodecanarias.org/aplicaciones/pms/">
+            <code class="exp">EXP</code></a>
+
+          </td>
+
+          <td align="center">
+            <i title="No require VPN" class="bi bi-unlock-fill"></i>
+          </td>
+
+        </tr>  
+  
+
+        <tr>
+
+          <td>
+          <i class="bi bi-asterisk"></i>
+          Cambiar Contraseña (Cuentas secundarias)
+          </td>  
+
+          <td>
+            <a href="https://www.gobiernodecanarias.org/selfservice/menu/CHANGE_PASS_BULK">
+            <code class="exp">EXP</code></a>
+            <a href="https://www-pre.gobiernodecanarias.org/selfservice/menu/CHANGE_PASS_BULK">
+            <code class="pre">PRE</code>
+          </td>
+
+          <td align="center">
+            <i title="Requiere VPN" class="bi bi-lock-fill"></i>
+          <td>
+
+        </tr>
+
+      </table>
+
+    </div>
 	
   </div>
   
-</div>  
+</div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
