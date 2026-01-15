@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -20,6 +20,7 @@
 
 <div class="container">
   <div class="row">
+
     <div class="col-4">
 
       <h2>A comprobar cada día</h2>
@@ -60,6 +61,14 @@
           </a>
         </li>  
 
+        <li class="list-group-item">
+          <i class="bi bi-key"></i>
+          <a href="https://www.gobiernodecanarias.org/aplicaciones/portafirmas/recibidas_pendientes">
+            Portafirmas
+          </a>
+        </li>  
+
+        
 
       </ul>
 
@@ -79,7 +88,9 @@
 	    </dd>
 	  </ul>
 	
-    </div><div class="col-4">
+    </div>
+
+    <div class="col-4">
 
       <h3>Servidores</h3>
 
@@ -118,7 +129,57 @@
       arreglar en la versión 4. Hacer ETL de tipo identidad, que cojan los 
       datos en origen y creen réplicas en el <i>data lake</i>.</p>
 
-    </div><div class="col-3">
+	</div>
+  </div>
+
+  <div class="row">
+
+    <div class="col-6">
+      <h3>Tareas</h3>
+
+      <table class="table">
+      <tr>
+        <th>Acción</th>
+        <th>Ámbito</th>
+        <th align="center">VPN</th>
+      </tr>  
+      <tr>
+        <td>
+          <i class="bi bi-kanban"></i>
+          Redmine
+        </td>
+        <td>
+          <a href="https://www.gobiernodecanarias.org/aplicaciones/pms/">
+          <code class="exp">EXP</code></a>
+        </td>
+        <td align="center">
+          <i title="No require VPN" class="bi bi-unlock-fill"></i>
+        </td>
+      </tr>  
+
+      <tr>
+        <td>
+        <i class="bi bi-asterisk"></i>
+        Cambiar Contraseña (Cuentas secundarias)
+        </td>  
+
+        <td>
+          <a href="https://www.gobiernodecanarias.org/selfservice/menu/CHANGE_PASS_BULK">
+          <code class="exp">EXP</code></a>
+          <a href="https://www-pre.gobiernodecanarias.org/selfservice/menu/CHANGE_PASS_BULK">
+          <code class="pre">PRE</code>
+        </td>
+
+        <td align="center">
+          <i title="Requiere VPN" class="bi bi-lock-fill"></i>
+        <td>
+      </tr>
+
+    </table>
+
+  </div>
+	
+  <div class="col-3">
       <h3>Buscadores</h3>
       <ul class="list-group">
 
@@ -131,61 +192,29 @@
 
       </ul>
 	
-	</div><div class="col-5">
-      <h3>Tareas</h3>
+	</div><div class="col-3">
+      <h3>Recursos</h3>
+      <ul class="list-group">
+        <li class="list-group-item">
+          <i class="bi bi-fonts"></i>
+          <a href="https://fontawesome.com/v5/search">
+          Font Awesome Icons V5
+          </a>
+        </li>
 
-      <table class="table">
-        <tr>
-          <th>Acción</th>
-          <th>Ámbito</th>
-          <th align="center">VPN</th>
-        </tr>  
-        <tr>
+        <li class="list-group-item">
+          <i class="bi bi-bootstrap"></i>
+          <a href="https://icons.getbootstrap.com/">
+          Iconos Boostrap 5
+          </a>
+        </li>
 
-          <td>
-            <i class="bi bi-kanban"></i>
-            Redmine
-          </td>
+        
 
-          <td>
+      </ul>
+    </div></div>  
+      
 
-            <a href="https://www.gobiernodecanarias.org/aplicaciones/pms/">
-            <code class="exp">EXP</code></a>
-
-          </td>
-
-          <td align="center">
-            <i title="No require VPN" class="bi bi-unlock-fill"></i>
-          </td>
-
-        </tr>  
-  
-
-        <tr>
-
-          <td>
-          <i class="bi bi-asterisk"></i>
-          Cambiar Contraseña (Cuentas secundarias)
-          </td>  
-
-          <td>
-            <a href="https://www.gobiernodecanarias.org/selfservice/menu/CHANGE_PASS_BULK">
-            <code class="exp">EXP</code></a>
-            <a href="https://www-pre.gobiernodecanarias.org/selfservice/menu/CHANGE_PASS_BULK">
-            <code class="pre">PRE</code>
-          </td>
-
-          <td align="center">
-            <i title="Requiere VPN" class="bi bi-lock-fill"></i>
-          <td>
-
-        </tr>
-
-      </table>
-
-    </div>
-	
-  </div>
   
 </div>
 
