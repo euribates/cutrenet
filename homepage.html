@@ -109,15 +109,6 @@
         </tr>
 
         <tr>
-          <th><i class="bi bi-hdd"></i></th>
-          <td>
-            <a href="https://drive.google.com/drive/folders/1HF02IwjnPlhyRBufb7rvu58-CJgmdUrp?dmr=1&ec=wgc-drive-%5Bmodule%5D-goto">
-              Drive / Gobierno
-            </a>
-          </td>  
-        </tr>
-          
-        <tr>
         <th>
           <i class="bi bi-book"></i>
         </th>
@@ -158,21 +149,26 @@
    <div class="card mt-1">
     <h4 class="card-header">Servidores</h4>
     <div class="card-body">
+      <h6 class="card-subtitle">ISSI</h6>
+        <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+          <a href="http://issi.euribates.eu/">
+          <code>issi.euribates.eu</code></a>
+          <code class="dev">DEV</code>
+        </li>
+    
       <h6 class="card-subtitle">Servidores de SAS 3.5</h6>
       <ul class="list-group list-group-flush">
       <li class="list-group-item">
         <a href="https://cmm.gobiernodecanarias.net/">
         <code>cmm.gobiernodecanarias.net</code></a>
-        
-        <a href="https://cmm.gobiernodecanarias.net/">
-        <code class="exp">EXP</code></a>
+        <code class="exp">EXP</code>
       </li>
 
       <li class="list-group-item">
         <a href="https://cmm-pre.gobiernodecanarias.net/">
         <code>cmm-pre.gobiernodecanarias.net</code></a>
-        <a href="https://cmm-pre.gobiernodecanarias.net/">
-        <code class="pre">PRE</code></a>
+        <code class="pre">PRE</code>
       </ul>    
       
       <h6 class="card-subtitle">Servidores de SAS Viya (SAS 4)</h6>
@@ -198,7 +194,7 @@
 
  <div class="row mt-4">
 
-  <div class="col-lg-6 col-md-12 col-sm-12">
+  <div class="col-lg-7 col-md-12 col-sm-12">
    <div class="card mt-1">
     <h4 class="card-header">Tareas</h4>
     <div class="card-body">
@@ -207,7 +203,7 @@
       <tr>
         <th>Acción</th>
         <th>Ámbito</th>
-        <th align="center">VPN</th>
+        <th align="right">VPN</th>
       </tr>  
       <tr>
         <td> 
@@ -219,7 +215,7 @@
         <td>
           N/A
         </td>
-        <td align="center">
+        <td align="right" class="text-success">
           <i title="No require VPN" class="bi bi-unlock-fill"></i>
         </td>
 
@@ -240,110 +236,78 @@
            <dd>SUPERSET - Migración desde SAS - HIPERREG</dd>
          </dl>
         </td>
-        <td align="center">
+        <td align="right" class="text-success">
           <i title="No require VPN" class="bi bi-unlock-fill"></i>
         </td>
       </tr>  
 
       <tr>
-        <td>
+        <th>
         <i class="bi bi-asterisk"></i>
         Cambiar Contraseña<br>
         (Cuentas secundarias)
-        </td>  
+        </th>  
 
         <td>
-          <a href="https://www.gobiernodecanarias.org/selfservice/menu/CHANGE_PASS_BULK">
-          <code class="exp">EXP</code></a>
-          <a href="https://www-pre.gobiernodecanarias.org/selfservice/menu/CHANGE_PASS_BULK">
-          <code class="pre">PRE</code>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <a href="https://www.gobiernodecanarias.org/selfservice/menu/CHANGE_PASS_BULK">En explotación</a>
+              <code class="exp">EXP</code>
+            </li>
+            <li class="list-group-item">
+            <a href="https://www-pre.gobiernodecanarias.org/selfservice/menu/CHANGE_PASS_BULK">En pre-explotación</a>
+              <code class="pre">PRE</code>
+            </li>
+          </ul>
+        </td>
+        <td align="right" class="text-warning">
+        <i title="Requiere VPN" class="bi bi-lock-fill"></i>
         </td>
 
-        <td align="center">
-          <i title="Requiere VPN" class="bi bi-lock-fill"></i>
-        <td>
       </tr>
 
       <tr>
         <th>
-          <i title="Require VPN" class="bi bi-lock-fill"></i>
           Triskell
         </th>
-        <td colspan="2">
+        <td>
           <a href="https://ondemand.triskellsoftware.com/sso47/">
-            Desarrollo y ejecución de la estrategia de espacios de datos
+            Dirección por objetivos
           </a>
         </td>
-      </tr>
-
-      <tr>
-        <th></th>
-        <td colspan="2">
-          <a href="https://ondemand.triskellsoftware.com/sso47/">
-          Desarrollar, consensuar y consolidar un
-          catálogo-repositorio de datos maestros 
-          </a>
-        </td>
-      </tr>
-
-      <tr>
-        <th></th>
-        <td colspan="2">
-          <a href="https://ondemand.triskellsoftware.com/sso47/">
-            Difusión de la cartera de servicios
-          </a>
-        </td>
-      </tr>
-
-      <tr>
-        <th></th>
-        <td colspan="2">
-          <a href="https://ondemand.triskellsoftware.com/sso47/">
-            Publicación y puesta al servicio de las aplicaciones
-            tanto corporativas como departamentales 
-          </a>
-        </td>
-      </tr>
-
-      <tr>
-        <th></th>
-        <td colspan="2">
-          <a href="https://ondemand.triskellsoftware.com/sso47/">
-            Identificar los datos maestros de nuestra organización
-          </a>
+        <td align="right" class="text-warning">
+        <i title="Requiere VPN" class="bi bi-lock-fill"></i>
         </td>
       </tr>
 
       <tr>
        <th>
-         <i title="Require VPN" class="bi bi-lock-fill"></i>
          Open CMS
        </th>
        <td>
-         <a
-           href="https://cmsgob2.gobiernodecanarias.net/cmsgob2/workplace#!explorer">Open CMS</a>
-       </td>
-      </tr>
-      <tr>
-        <th></th>
-        <td>
-         <a href="https://cmsgob2.gobiernodecanarias.net/intranet/unidadddatos/">Unidad datos</a>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <a href="https://cmsgob2.gobiernodecanarias.net/cmsgob2/workplace#!explorer">Open CMS</a>
+            </li>
+          </ul>
         </td>
-      </tr>
-
+        <td align="right" class="text-warning">
+         <i title="Require VPN" class="bi bi-lock-fill"></i>
+        </td>
+      </tr>  
+    
       <tr>
-       <th>
-         <i title="Require VPN" class="bi bi-unlock-fill"></i>
+        <th>
         Solicitar integración con CAS/SAML2 
-       </th>
-       <td>
-         <a href="https://cmsgob2.gobiernodecanarias.net/">
-           <a href="https://www.gobiernodecanarias.org/aplicaciones/sirvete/peticion/view.jsp?id_peticion=745">
-             Sírvete/745
-           </a>
-       </td>
-       <td>
-      </td>
+        </th>
+        <td>
+          <a href="https://www.gobiernodecanarias.org/aplicaciones/sirvete/peticion/view.jsp?id_peticion=745">
+          Sírvete/745
+          </a>
+        </td>
+        <td align="right" class="text-success">
+          <i title="Require VPN" class="bi bi-unlock-fill"></i>
+        </td>
       </tr>
       
     </table>
@@ -351,7 +315,7 @@
    </div><!-- de card -->
   </div><!-- de col -->    
 
-  <div class="col-lg-3 col-sm-6 col-xs-12">
+  <div class="col-lg-5 col-sm-12 col-xs-12">
    <div class="card mt-1">
      <h4 class="card-header">Recursos y buscadores </h4>
     <div class="card-body">    
@@ -410,26 +374,6 @@
    </div>
   </div>    
 
-  <div class="col-lg-3 col-sm-6 col-xs-12">
-   <div class="card mt-1">
-    <h3 class="card-header">Enlaces</h3>
-    <div class="card-body">
-        <ul>
-          <li>
-            <a href="https://encuentrosdatosabiertos.es/" target="_blank">
-              <b>Encuentro nacional de datos abiertos</b>
-            </a>
-              <ul>
-                <li><a href="https://encuentrosdatosabiertos.es/retos">Retos</a></li>
-                <li><a href="https://encuentrosdatosabiertos.es/wp-content/uploads/2025/05/RETO-IV-ENDA-Memoria.pdf">Propuesta metodológica para la apertura de datos públicos</a></li>
-                <li><a href="https://docs.google.com/spreadsheets/d/1XYfUqHRqg02FoIxj14w-ix2lj4NzF2QD9IzrfzIzrLs/copy">Selección de normativa</a></li>
-                <li><a href="https://docs.google.com/spreadsheets/d/1Sakzc9X5OX1ngpbPIpwLWqKTbeGDGs7_95Viz_x6ioI/copy">Herramienta de priorización</a></li>
-              </ul>
-          </li>
-        </ul>
-    </div><!-- de card-body -->
-   </div><!-- de card -->
-  </div><!-- de col -->
  </div><!-- de row -->
 
 </div><!-- de container -->

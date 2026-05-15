@@ -23,3 +23,17 @@
   text-decoration: None;
   font-weight: bolder;
   }
+
+.dev {
+  border: 1px solid #baa226;
+  color: #6A502F;
+  background-color: #e1d287;
+  padding-top: 1px;
+  padding-left: 2px;
+  padding-right: 2px;
+  padding-bottom: 1px;
+  border-radius: 2.5px;
+  text-decoration: None;
+  font-weight: bolder;
+  }
+
