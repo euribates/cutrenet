@@ -1,0 +1,21 @@
+{% extends 'commons/base.html' %}
+{% load labels %}
+
+{% block content %}
+
+{% regroup enlaces by seccion as lista_enlaces %}
+
+
+
+<div class="columns is-multiline">
+  {% for grupo in lista_enlaces %}
+  <div class="column is-{{ grupo.grouper.ancho }}">
+    <h2 class="subtitle">{{ grupo.grouper }} [{{ grupo.grouper.ancho}}] </h2>
+    {% for enlace in grupo.list %}
+      {% include "homepage/includes/enlace.html" with enlace=enlace %}
+    {% endfor %}
+  </div><!-- de column -->
+  {% endfor %}
+</div><!-- de columns -->
+
+{% endblock content %}

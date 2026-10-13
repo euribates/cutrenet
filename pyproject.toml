@@ -1,0 +1,30 @@
+[project]
+name = "cutrenet"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Juan Ignacio Rodriguez de Leon", email = "euribates@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "django>=6.1.2",
+    "prettyconf>=3.0.1",
+    "wagtail>=8.0",
+]
+
+[project.scripts]
+cutrenet = "cutrenet:main"
+
+[build-system]
+requires = ["uv_build>=0.12.13,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "django-debug-toolbar>=8.0.0",
+    "django-extensions>=4.1",
+    "django-werkzeug>=1.0.0",
+    "icecream>=2.2.0",
+    "ipython>=9.17.1",
+]

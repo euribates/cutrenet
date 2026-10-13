@@ -1,0 +1,21 @@
+{% load labels %}
+<article class="block">
+  {% if enlace.icono %}
+  <figure class="is-pulled-left">
+    <p class="image is-32x32">
+    <span class="icon">{{ enlace.icono|safe }}</span>
+    </p>
+  </figure>
+  {% endif %}
+  <strong>
+    <a href="{{ enlace.url }}">
+    {{ enlace.titulo_enlace }}
+    </a>
+  </strong>
+    {% if enlace.texto_ayuda %}
+    <br><small>
+      {{ enlace.texto_ayuda }}
+    </small>  
+    {% endif %}
+    {{ enlace.entorno|as_entorno }}  
+</article>

@@ -1,0 +1,8 @@
+{% extends 'commons/base.html' %}
+{% load wagtailcore_tags %}
+
+{% block content %}
+<main class="content">
+  {{ page.body|richtext }}
+</main>
+{% endblock %}
